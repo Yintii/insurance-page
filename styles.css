@@ -1,0 +1,98 @@
+html, body{
+  /*remove padding natively given by browser*/
+  margin:0;
+  padding:0;
+  font-family: 'Karla', sans-serif;
+}
+.hidden{
+  display:none;
+}
+body{
+  text-align: center;
+  width:100vw;
+  display:flex;
+  flex-flow:column nowrap;
+}
+header{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content: space-between;
+  padding: 20px 25px;
+}
+header > img{
+  align-self: center;
+}
+hr{
+  width:200px;
+  margin:auto;
+  margin-bottom:40px;
+  color:#f7f7f7;
+}
+#Humanizing{
+  position: relative;
+  background-color: hsl(256, 26%, 20%);
+  color:white;
+  margin-bottom: 200px;
+  padding-top:50px;
+}
+#waveLeft{
+  position: absolute;
+  top:0px;
+  left:0px;
+}
+#waveRight{
+  position:absolute;
+  top:410px;
+  right:0px;
+}
+.section-content{
+  display:flex;
+  flex-flow: column nowrap;
+  padding: 50px 20px;
+
+}
+.section-header, .feature-name{
+  font-family: 'DM Serif Display', serif;
+}
+.section-header{
+  font-size:35pt;
+  line-height: 1;
+  margin: 20px 0px;
+}
+.section-text, .section-btn{
+  color:hsl(266, 0%, 85%);
+}
+.section-text{
+  font-size: 14pt;
+  line-height: 1.75;
+}
+.section-btn{
+  border: hsl(266, 0%, 85%) 2px solid;
+  margin: 40px auto;
+  padding:10px 40px;
+}
+#features{
+  padding: 40px 0px;
+}
+.feature > img{
+  padding:20px 0px;
+}
+.feature-name{
+  font-size:22pt;
+}
+.feature-text{
+  padding: 20px 40px;
+  color:hsl(273, 4%, 51%);
+  line-height: 1.75;
+}
+#find-out-more{
+  color:white;
+  margin: 100px 20px;
+  position: relative;
+  background-color: hsl(256, 26%, 20%);
+}
+#find-out-more > img{
+  position: absolute;
+  top:0px;
+  right:0px;
+}
