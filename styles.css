@@ -7,6 +7,13 @@ html, body{
 .hidden{
   display:none;
 }
+.stylishline{
+  width: 150px;
+  height:1px;
+  background:lightgray;
+  position: relative;
+  margin: 20px;
+}
 body{
   text-align: center;
   width:100vw;
@@ -39,12 +46,12 @@ a{
   margin-bottom: 200px;
   padding-top:50px;
 }
-#waveLeft{
+#waveLeftMobile{
   position: absolute;
   top:0px;
   left:0px;
 }
-#waveRight{
+#waveRightMobile{
   position:absolute;
   top:410px;
   right:0px;
@@ -53,7 +60,6 @@ a{
   display:flex;
   flex-flow: column nowrap;
   padding: 50px 20px;
-
 }
 .section-header, .feature-name{
   font-family: 'DM Serif Display', serif;
@@ -75,6 +81,10 @@ a{
   margin: 40px auto;
   padding:10px 40px;
 }
+.section-btn:hover{
+  background-color: white;
+  color: hsl(256, 26%, 20%);
+}
 #features{
   padding: 40px 0px;
 }
@@ -93,6 +103,9 @@ a{
   color:white;
   margin: 100px 20px;
   position: relative;
+  background: url("./images/bg-pattern-how-we-work-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
   background-color: hsl(256, 26%, 20%);
 }
 #find-out-more > img{
@@ -107,6 +120,9 @@ footer{
 }
 #footer-header{
   position:relative;
+  background: url("./images/bg-pattern-footer-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
 #footerWaves{
   position:absolute;
@@ -134,4 +150,100 @@ footer{
 .footer-section-list{
   display:flex;
   flex-flow: column nowrap;
+}
+
+@media (min-width:415px){
+  #Humanizing{
+    display:grid;
+    grid-template-columns: auto 500px 500px auto;
+    grid-template-rows: 100px 300px 200px;
+  }
+  .section-content{
+    position: relative;
+    grid-row-start:1;
+    grid-column-start: 2;
+    text-align: left;
+  }
+  .section-btn{
+    margin: 20px auto 0 0;
+  }
+  #Humanizing > .stylishline{
+    grid-column-start:2;
+    grid-row-start:1;
+  }
+  #desktopimg{
+    position: absolute;
+    grid-row-start:2;
+    grid-column-start: 3;
+    width:540px;
+    height:650px;
+    z-index: 1;
+  }
+  #waveLeftDesk, #waveRightDesk{
+    position:absolute;
+  }
+  #waveRightDesk{
+    right:0px;
+  }
+  #waveLeftDesk{
+    left:0px;
+    top:400px;
+  }
+  #features{
+    display: flex;
+    flex-flow:row nowrap;
+    width:90vw;
+    margin:auto;
+  }
+  #different > .section-header{
+    text-align: left;
+    margin: 50px 80px;
+  }
+  .section-header > .stylishline{
+    margin: 50px 0px;
+  }
+  .feature{
+    display:flex;
+    flex-flow:column nowrap;
+    text-align: left;
+    width:350px;
+    height:250px;
+    margin: 0 auto;
+  }
+  .feature-name{
+    padding: 0px 0px;
+  }
+  .feature-text{
+    padding: 20px 0px;
+  }
+  .feature > img{
+    align-self:center;
+    margin: 0 auto 0 0;
+    width:86px;
+    height:86px;
+  }
+  #find-out-more{
+    margin: 100px 20px;
+    position: relative;
+    background: url("./images/bg-pattern-how-we-work-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: hsl(256, 26%, 20%);
+  }
+
+  #find-out-more > .section-content{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  #find-out-more > .section-content > .section-header{
+    text-align: left;
+    width: 475px;
+    font-size: 40pt;
+    margin: 0 auto;
+  }
+  #find-out-more > .section-content > .section-btn{
+    border: hsl(266, 0%, 85%) 2px solid;
+    margin:auto;
+  }
 }

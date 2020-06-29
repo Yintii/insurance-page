@@ -23,12 +23,22 @@
     </nav>
   </header>
 
-  <img src="./images/image-intro-mobile.jpg" alt="mobile-fam">
+  <img id="mobileimg" class="hidden" src="./images/image-intro-mobile.jpg" alt="mobile-fam">
 
   <section id="Humanizing">
-    <img id="waveLeft" src="./images/bg-pattern-intro-left-mobile.svg" alt="left-waves">
-    <img id="waveRight" src="./images/bg-pattern-intro-right-mobile.svg" alt="left-waves">
+    <!-- mobile waves -->
+    <img id="waveLeftMobile" class="hidden" src="./images/bg-pattern-intro-left-mobile.svg" alt="left-waves">
+    <img id="waveRightMobile" class="hidden" src="./images/bg-pattern-intro-right-mobile.svg" alt="left-waves">
+    <!-- desktop waves -->
+    <img id="waveLeftDesk" src="./images/bg-pattern-intro-left-desktop.svg" alt="left-waves">
+    <img id="waveRightDesk" src="./images/bg-pattern-intro-right-desktop.svg" alt="left-waves">
+    <!-- the above configuration is messing with the mobile site until
+    I make it to where it is repsonive on both sides -->
+
+    <img id="desktopimg" src="./images/image-intro-desktop.jpg" alt="desktopfam">
+    <div class="stylishline"></div>
     <div class="section-content">
+
       <div class="section-header">
         Humanizing<br /> your insurance.
       </div>
@@ -37,6 +47,7 @@
         and technology to help you find the plan that’s right for you. Ensure you
         and your loved ones are protected.
       </div>
+
       <div class="section-btn">
         VIEW PLANS
       </div>
@@ -44,8 +55,9 @@
   </section>
 
   <section id="different">
-    <hr/>
+
     <div class="section-header">
+      <div class="stylishline"></div>
       We’re different
     </div>
     <div id="features">
@@ -86,7 +98,6 @@
   </section>
 
   <section id="find-out-more">
-    <img src="./images/bg-pattern-how-we-work-mobile.svg" alt="">
     <div class="section-content">
       <div class="section-header">
         Find out more about how we work
@@ -99,7 +110,6 @@
 
   <footer>
     <div id="footer-header">
-      <img id="footerWaves" src="./images/bg-pattern-footer-mobile.svg" alt="footer-waves">
       <img id="footerlogo" src="./images/logo.svg" alt="logo">
       <div class="socialmedia">
         <img src="./images/icon-facebook.svg" alt="FaceBook">
