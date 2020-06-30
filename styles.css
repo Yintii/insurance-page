@@ -207,20 +207,28 @@ footer{
     display:none;
   }
   header{
-    width:80vw;
+    width:70vw;
     margin:auto;
+    justify-content: space-between;
   }
   nav{
-    width:35vw;
+    position: relative;
+    width:25vw;
+    height:auto;
   }
   #nav-items{
     display:flex;
+    height:unset;
+    position: relative;
+    top:0;
+    right:0;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    background-color: none;
+    background: none;
   }
   #nav-items > a {
-    margin: 0px auto;
-    padding:20px 40px;
+    color:black;
+    padding: 20px;
   }
   #nav-items > a:nth-child(4){
     border: solid 1px black;
@@ -228,6 +236,9 @@ footer{
   #nav-items > a:nth-child(4):hover{
     color:white;
     background-color: hsl(256, 26%, 20%);
+  }
+  #nav-items > img{
+    display:none;
   }
   div.stylishline:nth-child(6){
     display:block;
