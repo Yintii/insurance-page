@@ -14,6 +14,16 @@ html, body{
   position: relative;
   margin: 20px;
 }
+div.stylishline:nth-child(6){
+  display:none;
+}
+.section-header > div.stylishline:nth-child(1){
+  margin: 100px auto 50px auto;
+}
+div.stylishline:nth-child(2){
+  margin:auto;
+  width:80vw;
+}
 body{
   text-align: center;
   width:100vw;
@@ -25,6 +35,9 @@ header{
   flex-flow:row nowrap;
   justify-content: space-between;
   padding: 20px 25px;
+}
+#nav-items{
+  display:none;
 }
 header > img{
   align-self: center;
@@ -39,11 +52,13 @@ a{
   text-decoration: none;
   color:black;
 }
+#desktopimg{
+  display:none;
+}
 #Humanizing{
   position: relative;
   background-color: hsl(256, 26%, 20%);
   color:white;
-  margin-bottom: 200px;
   padding-top:50px;
 }
 #waveLeftMobile{
@@ -56,6 +71,12 @@ a{
   top:410px;
   right:0px;
 }
+#waveLeftDesk{
+  display:none;
+}
+#waveRightDesk{
+  display:none;
+}
 .section-content{
   display:flex;
   flex-flow: column nowrap;
@@ -65,7 +86,7 @@ a{
   font-family: 'DM Serif Display', serif;
 }
 .section-header{
-  font-size:64pt;
+  font-size:40pt;
   line-height: 64;
   line-height: 1;
   margin: 20px 0px;
@@ -147,13 +168,47 @@ footer{
 .footer-section-header{
   color:grey;
   padding:20px;
+  text-transform: capitalize;
 }
 .footer-section-list{
   display:flex;
   flex-flow: column nowrap;
+  text-transform: capitalize;
 }
 
 @media (min-width:415px){
+  header > nav > img{
+    display:none;
+  }
+  header{
+    width:80vw;
+    margin:auto;
+  }
+  nav{
+    width:35vw;
+  }
+  #nav-items{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+  }
+  #nav-items > a {
+    margin: 0px auto;
+    padding:20px 40px;
+  }
+  #nav-items > a:nth-child(4){
+    border: solid 1px black;
+  }
+  #nav-items > a:nth-child(4):hover{
+    color:white;
+    background-color: hsl(256, 26%, 20%);
+  }
+  div.stylishline:nth-child(6){
+    display:block;
+  }
+  .section-header > div.stylishline:nth-child(1){
+    margin: 100px 0px;
+  }
   #Humanizing{
     display:grid;
     grid-template-columns: auto 700px 700px auto;
@@ -165,14 +220,21 @@ footer{
     grid-column-start: 2;
     text-align: left;
   }
+  .section-header{
+    font-size:64pt;
+  }
   .section-btn{
     margin: 20px auto 0 0;
+  }
+  #mobileimg{
+    display:none;
   }
   #Humanizing > .stylishline{
     grid-column-start:2;
     grid-row-start:1;
   }
   #desktopimg{
+    display:block;
     position: absolute;
     grid-row-start:2;
     grid-column-start: 3;
@@ -180,7 +242,14 @@ footer{
     height:650px;
     z-index: 1;
   }
+  #waveLeftMobile{
+    display:none;
+  }
+  #waveRightMobile{
+    display:none;
+  }
   #waveLeftDesk, #waveRightDesk{
+    display:block;
     position:absolute;
   }
   #waveRightDesk{
@@ -198,7 +267,7 @@ footer{
   }
   #different > .section-header{
     text-align: left;
-    margin: 50px 180px;
+    margin: 0px 180px;
   }
   .section-header > .stylishline{
     margin: 0px auto 50px 0px;
@@ -256,7 +325,7 @@ footer{
   }
   footer > .stylishline{
     width:80vw;
-    margin:auto;
+    margin:0 auto;
   }
   #footer-header{
     position:relative;
@@ -265,7 +334,7 @@ footer{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 200px;
+    margin: 50px 200px 20px 200px;
   }
   #footerlogo{
     align-self:center;
@@ -280,12 +349,18 @@ footer{
   #footer-links{
     display:flex;
     flex-flow: row nowrap;
+    width:80vw;
+    margin:auto;
   }
   .footer-section{
     display:flex;
     flex-flow:column nowrap;
-    margin:auto;
     text-align: left;
+    justify-content: flex-start;
+    margin-right: 270px;
+  }
+  .footer-section-header{
+    padding: 30px 0px;
   }
   .footer-section-list{
     line-height: 2;
