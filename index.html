@@ -13,12 +13,14 @@
   <header>
     <img src="./images/logo.svg" alt="Logo Image">
     <nav>
-      <img src="./images/icon-hamburger.svg" alt="">
+      <img id="openMenu" onclick="openMenu()" src="./images/icon-hamburger.svg" alt="dropmenu">
+      <img id="closeMenu" onclick="closeMenu()" class="hidden" src="./images/icon-close.svg" alt="closemenu">
       <div id="nav-items">
         <a href=#>How we work</a>
         <a href="#">Blog</a>
         <a href="#">Account</a>
         <a href="#">View plans</a>
+        <img src="./images/bg-pattern-mobile-nav.svg" alt="waves">
       </div>
     </nav>
   </header>
@@ -168,5 +170,8 @@
       </div>
     </div>
   </footer>
+  <script src="dropDown.js" type="text/javascript">
+
+  </script>
 </body>
 </html>

@@ -7,6 +7,9 @@ html, body{
 .hidden{
   display:none;
 }
+.show-menu{
+  display:flex;
+}
 .stylishline{
   width: 150px;
   height:1px;
@@ -36,9 +39,6 @@ header{
   justify-content: space-between;
   padding: 20px 25px;
 }
-#nav-items{
-  display:none;
-}
 header > img{
   align-self: center;
 }
@@ -51,6 +51,32 @@ hr{
 a{
   text-decoration: none;
   color:black;
+}
+#nav-items > a{
+  text-decoration: none;
+  color:white;
+  padding:20px 0px;
+  margin:10px 25px 0px 25px;
+}
+#nav-items{
+  display:none;
+  flex-flow:column nowrap;
+  position:absolute;
+  top:76px;
+  left:0;
+  width:100vw;
+  height:576px;
+  justify-content: start;
+  background-color:hsl(270, 9%, 17%);
+}
+#nav-items > a:nth-child(4){
+  border:1px solid white;
+}
+#nav-items > img{
+  position: relative;
+  width:100vw;
+  right:0;
+
 }
 #desktopimg{
   display:none;
