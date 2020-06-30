@@ -357,6 +357,7 @@ footer{
     display: flex;
     flex-flow: column nowrap;
     background: url("./images/bg-pattern-footer-desktop.svg");
+    background-color: hsl(0, 0%, 98%);
     background-repeat: no-repeat;
     background-position: top left;
   }
